@@ -1,8 +1,20 @@
-const onSubmit = (e) => {
-  e.preventDefault();
+const onClickA = (e) => {
+  console.log(inputEL.value);
+};
+const onClickB = (e) => {
+  console.log(inputEL.value);
+};
+const onClickC = (e) => {
   console.log(inputEL.value);
 };
 
-const formEL = document.querySelector('form');
 const inputEL = document.getElementById('input');
-formEL.addEventListener('submit', onSubmit);
+const a = document
+  .querySelector('[data-a]')
+  .addEventListener('click', onClickA);
+const b = document
+  .querySelector('[data-b]')
+  .addEventListener('click', onClickB);
+const c = document
+  .querySelector('[data-c]')
+  .addEventListener('click', onClickC);
