@@ -1,20 +1,26 @@
-const onClickA = (e) => {
-  console.log(inputEL.value);
-};
-const onClickB = (e) => {
-  console.log(inputEL.value);
-};
-const onClickC = (e) => {
-  console.log(inputEL.value);
+const onClick = (e) => {
+  const { name } = e.target;
+
+  switch (name) {
+    case 'first': {
+      console.log(`This is a first button`);
+      break;
+    }
+    case 'second': {
+      console.log(`This is a second button`);
+      break;
+    }
+    case 'last': {
+      console.log(`This is a last button`);
+      break;
+    }
+    default:
+      return console.log(`Not found ${name}`);
+  }
+
+  //   console.log(inputEL.value, e.target.name);
 };
 
+const form = document.querySelector('form');
 const inputEL = document.getElementById('input');
-const a = document
-  .querySelector('[data-a]')
-  .addEventListener('click', onClickA);
-const b = document
-  .querySelector('[data-b]')
-  .addEventListener('click', onClickB);
-const c = document
-  .querySelector('[data-c]')
-  .addEventListener('click', onClickC);
+const currentEL = form.addEventListener('click', onClick);
