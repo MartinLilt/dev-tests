@@ -1,6 +1,7 @@
-const onClick = (e) => {
+const form = document.querySelector('form');
+const inputEL = document.getElementById('input');
+const currentEL = form.addEventListener('click', (e) => {
   const { name } = e.target;
-
   switch (name) {
     case 'first': {
       console.log('This is a first button', inputEL.value);
@@ -15,12 +16,6 @@ const onClick = (e) => {
       break;
     }
     default:
-      return console.log(`Not found ${name}`);
+      return;
   }
-
-  //   console.log(inputEL.value, e.target.name);
-};
-
-const form = document.querySelector('form');
-const inputEL = document.getElementById('input');
-const currentEL = form.addEventListener('click', onClick);
+});
