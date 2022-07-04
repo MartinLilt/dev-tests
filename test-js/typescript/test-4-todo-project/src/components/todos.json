@@ -1,6 +1,0 @@
-[
-  { "id": "id-1", "text": "Just learn React", "completed": true },
-  { "id": "id-2", "text": "Just learn React Router", "completed": false },
-  { "id": "id-3", "text": "Do you love Redux?", "completed": false },
-  { "id": "id-4", "text": "Just use React hooks!", "completed": true }
-]
